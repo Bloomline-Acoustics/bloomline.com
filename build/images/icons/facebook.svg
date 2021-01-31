@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled 4</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Facebook_circle_pictogram" fill-rule="nonzero">
+            <circle id="Oval" fill="#4E71A8" cx="24" cy="24" r="24"></circle>
+            <path d="M29.9,19.5 L25.9,19.5 L25.9,16.9 C25.9,15.9 26.6,15.7 27,15.7 C27.5,15.7 29.8,15.7 29.8,15.7 L29.8,11.3 L25.9,11.3 C21.5,11.3 20.6,14.6 20.6,16.6 L20.6,19.5 L18.1,19.5 L18.1,24 L20.6,24 C20.6,29.8 20.6,36.7 20.6,36.7 L25.9,36.7 C25.9,36.7 25.9,29.7 25.9,24 L29.5,24 L29.9,19.5 Z" id="Path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

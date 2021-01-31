@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Title, description, keywords -->
+  <title>
+    <%= current_page.data.title %>
+  </title>
+  <meta name="description" content="<%= current_page.data.description %>">
+  <meta name="keywords" content="<%= current_page.data.keywords %>">
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/images/icons/bloomline.svg">
+  <link rel="mask-icon" href="/images/icons/bloomline.svg" color="red">
+  <!-- Styles, fonts -->
+  <%= stylesheet_link_tag 'site' %>
+</head>
+
+<body>
+  <nav class="mainnav">
+    <a class="mainnav-left" href="/">
+      <img class="mainnav-left--logo" src="images/logos/bloomline-logo-black-bg.svg" width="121" height="35">
+    </a>
+    <div class="mainnav-right">
+      <!-- <span class="hamburger-toggle">☰</span> -->
+      <a href="/technology">Technology</a>
+<!--       <a href="/omnidrive-c">Omnidrive C</a>
+      <a href="/omnidrive-pro">Omnidrive Pro</a>
+ -->      <a href="/phantom-ii">Phantom II</a>
+      <a href="/contact">Contact</a>
+      <a href="https://facebook.com/Bloomline.Acoustics"><img src="images/icons/facebook.svg"></a>
+      <a href="https://nl.linkedin.com/company/bloomline"><img src="images/icons/linkedin.svg"></a>
+    </div>
+  </nav>
+  <article>
+    <%= yield %>
+  </article>
+  <footer>
+    <%= yield_content :footer %>
+    <p>&copy; Bloomline Acoustics BV. All rights reserved</p>
+    <p>
+      <a href="/terms-of-use">Terms of Use</a>
+      |
+      <a href="/privacy">Privacy Statement</a>
+    </p>
+  </footer>
+</body>
+
+</html>
