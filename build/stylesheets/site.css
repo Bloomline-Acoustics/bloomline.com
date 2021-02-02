@@ -419,6 +419,16 @@ h2 {
   font-size: 2rem;
   font-weight: 400; }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+th, td {
+  text-align: left; }
+  th.number, td.number {
+    text-align: right;
+    white-space: nowrap; }
+
 dl, dt, dd {
   margin: 0;
   padding: 0; }
