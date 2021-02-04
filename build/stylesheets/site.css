@@ -408,33 +408,49 @@ template {
   display: none; }
 
 /* ADDITIONAL RESETS */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1em 0 .5em 0; }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 500; }
 
 h2 {
-  font-size: 2rem;
+  color: #999;
+  font-size: 2.8rem;
   font-weight: 400; }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: 300; }
+  font-size: 2rem;
+  font-weight: 500; }
 
-th, td {
+h4 {
+  font-size: 1.4rem; }
+
+th,
+td {
   text-align: left; }
-  th.number, td.number {
+  th.number,
+  td.number {
     text-align: right;
     white-space: nowrap; }
 
-dl, dt, dd {
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0; }
 
 dt {
   font-weight: bold; }
+
+dd {
+  margin-bottom: 1rem; }
 
 dl.vertical {
   margin: 1rem 0; }
@@ -478,21 +494,22 @@ body {
   -webkit-columns: 3;
      -moz-columns: 3;
           columns: 3; }
-
-.columns.columns-3columns dt {
-  -webkit-column-break-after: avoid-column;
-     -moz-column-break-after: avoid-column;
-          break-after: avoid-column;
-  font-weight: bold; }
-  .columns.columns-3columns dt:not(:first-child) {
-    -webkit-column-break-before: column;
-       -moz-column-break-before: column;
-            break-before: column; }
-
-.columns.columns-3columns dd {
-  -webkit-column-break-before: avoid-column;
-     -moz-column-break-before: avoid-column;
-          break-before: avoid-column; }
+  .columns.columns-3columns dt {
+    -webkit-column-break-after: avoid-column;
+       -moz-column-break-after: avoid-column;
+            break-after: avoid-column;
+    font-weight: bold; }
+  .columns.columns-3columns dt + dd {
+    -webkit-column-break-before: avoid-column;
+       -moz-column-break-before: avoid-column;
+            break-before: avoid-column; }
+  .columns.columns-3columns dd {
+    -webkit-column-break-before: avoid-column;
+       -moz-column-break-before: avoid-column;
+            break-before: avoid-column;
+    -webkit-column-break-inside: avoid;
+       -moz-column-break-inside: avoid;
+            break-inside: avoid-column; }
 
 /* No wrapping of phone numbers */
 a[href^='tel'] {
@@ -547,7 +564,7 @@ a[href^='tel'] {
 
 header {
   /*line-height: 1;*/
-  margin: 2rem 0;
+  margin: 2.5rem 0;
   text-align: center; }
   header > * {
     margin: 0; }
@@ -560,13 +577,13 @@ header {
 
 .header-hero {
   display: block;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%; }
 
 img.header-logo {
-  height: 4rem;
+  height: 6rem;
   vertical-align: middle;
   width: auto; }
   img.header-logo + h2 {
