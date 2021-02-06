@@ -36,7 +36,7 @@
 
 @font-face {
   font-family: AlegreyaSans;
-  src: url("/fonts/AlegreyaSans/AlegreyaSans-RegularItalic.ttf") format("truetype");
+  src: url("/fonts/AlegreyaSans/AlegreyaSans-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap; }
@@ -414,23 +414,28 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1em 0 .5em 0; }
+  margin: .75em 0 .375em 0; }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500; }
 
 h2 {
   color: #999;
-  font-size: 2.8rem;
-  font-weight: 400; }
+  font-size: 2.5rem;
+  font-weight: 300; }
 
 h3 {
   font-size: 2rem;
   font-weight: 500; }
 
 h4 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  font-weight: 700; }
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 700; }
 
 th,
 td {
@@ -464,13 +469,20 @@ body {
   line-height: 1.33;
   font-family: 'AlegreyaSans', sans-serif; }
 
+section {
+  margin: 3rem auto; }
+
 section.text {
-  margin: 2rem auto;
+  border-top: 1px solid #ccc;
   max-width: 42rem; }
+  section.text.text-wide {
+    max-width: 100%; }
 
+/*
 section.text aside {
-  width: 30%; }
-
+  width: 30%;
+}
+*/
 /* LAYOUT */
 body {
   margin: 0 auto;
@@ -489,28 +501,40 @@ body {
 
 .columns {
   margin: 1rem 0; }
+  .columns.columns-3columns {
+    -webkit-columns: 3;
+       -moz-columns: 3;
+            columns: 3; }
 
-.columns.columns-3columns {
-  -webkit-columns: 3;
-     -moz-columns: 3;
-          columns: 3; }
-  .columns.columns-3columns dt {
-    -webkit-column-break-after: avoid-column;
-       -moz-column-break-after: avoid-column;
-            break-after: avoid-column;
-    font-weight: bold; }
-  .columns.columns-3columns dt + dd {
-    -webkit-column-break-before: avoid-column;
-       -moz-column-break-before: avoid-column;
-            break-before: avoid-column; }
-  .columns.columns-3columns dd {
-    -webkit-column-break-before: avoid-column;
-       -moz-column-break-before: avoid-column;
-            break-before: avoid-column;
+ul.columns.columns-3columns {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
+  ul.columns.columns-3columns > li {
     -webkit-column-break-inside: avoid;
        -moz-column-break-inside: avoid;
-            break-inside: avoid-column; }
+            break-inside: avoid-column;
+    display: block; }
+    ul.columns.columns-3columns > li:first-child h4 {
+      margin-top: 0; }
 
+/*.columns.columns-3columns {
+  columns: 3;
+
+  dt {
+    break-after: avoid-column;
+    font-weight: bold;
+  }
+
+  dt + dd {
+    break-before: avoid-column;
+  }
+
+  dd {
+    break-before: avoid-column;
+    break-inside: avoid-column;
+  }
+}*/
 /* No wrapping of phone numbers */
 a[href^='tel'] {
   white-space: nowrap; }
