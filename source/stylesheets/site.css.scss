@@ -549,10 +549,10 @@ td {
   padding-top: .5rem;
 
   &:not(:first-child) {
-    padding-left: 1rem;
+    padding-left: .5rem;
   }
   &:not(:last-child) {
-    padding-right: 1rem;
+    padding-right: .5rem;
   }
 
   &.number {
@@ -616,7 +616,7 @@ section.text aside {
 
 /* LAYOUT */
 
-$responsive-boundary: 32rem;
+$responsive-boundary: 42rem;
 
 
 body {
@@ -658,24 +658,13 @@ ul.columns.columns-3columns {
     }
   }
 }
-
-/*.columns.columns-3columns {
-  columns: 3;
-
-  dt {
-    break-after: avoid-column;
-    font-weight: bold;
+@media screen and (max-width: $responsive-boundary) {
+  .columns.columns-3columns {
+    columns: 1;
   }
 
-  dt + dd {
-    break-before: avoid-column;
-  }
+}
 
-  dd {
-    break-before: avoid-column;
-    break-inside: avoid-column;
-  }
-}*/
 
 
 /* No wrapping of phone numbers */
@@ -790,11 +779,21 @@ img.header-logo {
   width: 30%;
 }
 
+@media screen and (max-width: $responsive-boundary) {
+  .quotes-home {
+    flex-direction: column;
+    div {
+      margin: 1rem;
+      width: auto;
+    }
+  }
+}
+
 .quotes-home q {
   display: block;
   font-size: 1.25rem;
   font-weight: 700;
-  margin: 0;
+  margin: .5rem 0;
 }
 
 .quotes-home-author {
@@ -826,6 +825,16 @@ img.header-logo {
     height: 4rem;
     max-width: 20%;
     width: auto;
+  }
+}
+
+@media screen and (max-width: $responsive-boundary) {
+  .brands {
+    flex-direction: column;
+    img {
+      margin: 1rem auto;
+      max-width: auto;
+    }
   }
 }
 

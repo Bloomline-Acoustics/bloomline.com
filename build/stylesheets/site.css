@@ -451,10 +451,10 @@ td {
   padding-top: .5rem; }
   th:not(:first-child),
   td:not(:first-child) {
-    padding-left: 1rem; }
+    padding-left: .5rem; }
   th:not(:last-child),
   td:not(:last-child) {
-    padding-right: 1rem; }
+    padding-right: .5rem; }
   th.number,
   td.number {
     text-align: right;
@@ -536,23 +536,12 @@ ul.columns.columns-3columns {
     ul.columns.columns-3columns > li:first-child h4 {
       margin-top: 0; }
 
-/*.columns.columns-3columns {
-  columns: 3;
+@media screen and (max-width: 42rem) {
+  .columns.columns-3columns {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1; } }
 
-  dt {
-    break-after: avoid-column;
-    font-weight: bold;
-  }
-
-  dt + dd {
-    break-before: avoid-column;
-  }
-
-  dd {
-    break-before: avoid-column;
-    break-inside: avoid-column;
-  }
-}*/
 /* No wrapping of phone numbers */
 a[href^='tel'] {
   white-space: nowrap; }
@@ -640,11 +629,18 @@ img.header-logo {
   text-align: center;
   width: 30%; }
 
+@media screen and (max-width: 42rem) {
+  .quotes-home {
+    flex-direction: column; }
+    .quotes-home div {
+      margin: 1rem;
+      width: auto; } }
+
 .quotes-home q {
   display: block;
   font-size: 1.25rem;
   font-weight: 700;
-  margin: 0; }
+  margin: .5rem 0; }
 
 .quotes-home-author {
   display: block;
@@ -671,6 +667,13 @@ img.header-logo {
     height: 4rem;
     max-width: 20%;
     width: auto; }
+
+@media screen and (max-width: 42rem) {
+  .brands {
+    flex-direction: column; }
+    .brands img {
+      margin: 1rem auto;
+      max-width: auto; } }
 
 p {
   margin: .75rem 0; }
