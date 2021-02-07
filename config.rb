@@ -9,6 +9,8 @@ activate :directory_indexes
 
 activate :livereload
 
+activate :sitemap
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
