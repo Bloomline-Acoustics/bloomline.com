@@ -71,16 +71,14 @@ dl.vertical {
 /* TYPOGRAPHY */
 body {
   color: #222;
-  font-size: 21px;
+  font-size: 22px;
   line-height: 1.33;
   font-family: 'AlegreyaSans', sans-serif; }
 
 section {
-  margin: 3rem auto;
-  padding-top: 1.5rem; }
+  margin: 3rem auto; }
 
 section.text {
-  border-top: 1px solid #ccc;
   max-width: 42rem; }
   section.text.text-wide {
     max-width: 100%; }
