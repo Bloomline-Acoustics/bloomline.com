@@ -17,7 +17,8 @@
 
   <!-- Styles and viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= stylesheet_link_tag 'site' %>
+
+  <%= stylesheet_link_tag 'fonts', 'normalize', 'site' %>
   <!-- Preload fonts -->
 <!--   <link rel="preload" href="/fonts/AlegreyaSans/AlegreyaSans-Thin.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/fonts/AlegreyaSans/AlegreyaSans-ThinItalic.ttf" as="font" type="font/ttf" crossorigin>
@@ -36,15 +37,19 @@
       <img class="mainnav-left--logo" src="/images/logos/bloomline-logo-black-bg.svg" width="121" height="35">
     </a>
     <div class="mainnav-right">
-      <!-- <span class="hamburger-toggle">☰</span> -->
-      <a href="/technology">Technology</a>
-      <a href="/omnidrive-pro">Omnidrive Pro</a>
-      <a href="/omnidrive-c">Omnidrive C</a>
-      <a href="/phantom-ii">Phantom II</a>
-      <a href="/in-the-media">In the media</a>
-      <a href="/contact">Contact</a>
-      <a href="https://facebook.com/Bloomline.Acoustics"><img src="/images/icons/facebook.svg" height="48" width="48"></a>
-      <a href="https://nl.linkedin.com/company/bloomline"><img src="/images/icons/linkedin.svg" height="78" width="77"></a>
+      <input type="checkbox" id="menu-checkbox">
+      <span id="menu-hamburger">☰</span>
+      <div class="menu-items">
+        <a href="/history">History</a>
+        <a href="/technology">Technology</a>
+        <a href="/omnidrive-pro">Omnidrive Pro</a>
+        <a href="/omnidrive-c">Omnidrive C</a>
+        <a href="/phantom-ii">Phantom II</a>
+        <a href="/in-the-media">In the media</a>
+        <a href="/contact">Contact</a>
+        <a href="https://facebook.com/Bloomline.Acoustics"><img src="/images/icons/facebook.svg" height="48" width="48"></a>
+        <a href="https://nl.linkedin.com/company/bloomline"><img src="/images/icons/linkedin.svg" height="78" width="77"></a>
+      </div>
     </div>
   </nav>
   <article>
