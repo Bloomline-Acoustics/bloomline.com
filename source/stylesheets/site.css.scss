@@ -355,7 +355,7 @@ img.header-logo {
   padding: 1rem 0;
   img {
     display: block;
-    height: 3.5rem;
+    height: 4rem;
     margin: 2rem 1rem;
     max-width: 20%;
     width: auto;
@@ -366,8 +366,11 @@ img.header-logo {
   .brands {
     flex-direction: column;
     img {
-      margin: 1rem auto;
-      max-width: auto;
+      height: auto;
+      margin: 2em auto;
+      max-height: 4rem;
+      max-width: 50%;
+      width: 50%;
     }
   }
 }
