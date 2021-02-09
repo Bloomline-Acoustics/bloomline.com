@@ -72,9 +72,11 @@ dl.vertical {
     margin-top: 1rem; }
 
 /* TYPOGRAPHY */
+html {
+  font-size: 22px; }
+
 body {
   color: #222;
-  font-size: 22px;
   line-height: 1.33;
   font-family: 'AlegreyaSans', sans-serif; }
 
