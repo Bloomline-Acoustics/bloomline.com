@@ -5,28 +5,28 @@ h3,
 h4,
 h5,
 h6 {
-  margin: .75em 0 .375em 0; }
+  margin: 1em 0 .5em 0; }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.82rem;
   font-weight: 500; }
 
 h2 {
   color: #999;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300; }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 500; }
+  font-size: 1.68rem;
+  font-weight: 700; }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.41rem;
   font-weight: 700; }
 
 h5 {
-  font-size: 1.2rem;
-  font-weight: 700; }
+  font-size: 1.19rem;
+  font-weight: 500; }
 
 ul {
   padding-left: 1.5rem; }
@@ -84,7 +84,7 @@ section {
   margin: 3rem auto; }
 
 section.text {
-  max-width: 42rem; }
+  max-width: 32rem; }
   section.text.text-wide {
     max-width: 100%; }
 
@@ -96,7 +96,7 @@ section.text aside {
 /* LAYOUT */
 body {
   margin: 0 auto;
-  max-width: 62rem;
+  max-width: 56rem;
   padding: 0 1rem; }
 
 .centered {
@@ -143,7 +143,7 @@ ul.columns.columns-3columns {
     ul.columns.columns-3columns > li:first-child h3, ul.columns.columns-3columns > li:first-child h4 {
       margin-top: 0; }
 
-@media screen and (max-width: 36rem) {
+@media screen and (max-width: 32rem) {
   .columns.columns-3columns {
     columns: 1; } }
 
@@ -230,7 +230,7 @@ img.header-logo {
   text-align: center;
   width: 30%; }
 
-@media screen and (max-width: 36rem) {
+@media screen and (max-width: 32rem) {
   .quotes-home {
     flex-direction: column; }
     .quotes-home div {
@@ -239,17 +239,12 @@ img.header-logo {
 
 .quotes-home q {
   display: block;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.19rem;
+  font-weight: 500;
   margin: .5rem 0; }
 
-.quotes-home-author {
-  display: block;
-  font-weight: 100;
-  margin-top: .5rem; }
-
-.quotes-home p {
-  margin: 0; }
+.quotes-home cite {
+  font-style: italic; }
 
 .introduction-home {
   border-top: 1px solid #ccc;
@@ -273,7 +268,7 @@ img.header-logo {
     max-width: 20%;
     width: auto; }
 
-@media screen and (max-width: 36rem) {
+@media screen and (max-width: 32rem) {
   .brands {
     flex-direction: column; }
     .brands img {
@@ -289,7 +284,7 @@ img.header-logo {
     display: block;
     width: 49%; }
 
-@media screen and (max-width: 36rem) {
+@media screen and (max-width: 32rem) {
   .videos iframe {
     width: 100%; } }
 

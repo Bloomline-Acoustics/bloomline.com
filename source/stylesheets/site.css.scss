@@ -7,32 +7,32 @@ h3,
 h4,
 h5,
 h6 {
-  margin: .75em 0 .375em 0;
+  margin: 1em 0 .5em 0;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.82rem;
   font-weight: 500;
 }
 
 h2 {
   color: #999;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.68rem;
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.41rem;
   font-weight: 700;
 }
 h5 {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.19rem;
+  font-weight: 500;
 }
 
 
@@ -116,7 +116,7 @@ section {
 }
 
 section.text {
-  max-width: 42rem;
+  max-width: 32rem;
   &.text-wide {
     max-width: 100%;
   }
@@ -129,12 +129,12 @@ section.text aside {
 
 /* LAYOUT */
 
-$responsive-boundary: 36rem;
+$responsive-boundary: 32rem;
 
 
 body {
   margin: 0 auto;
-  max-width: 62rem;
+  max-width: 56rem;
   padding: 0 1rem;
 }
 
@@ -323,22 +323,18 @@ img.header-logo {
   }
 }
 
-.quotes-home q {
-  display: block;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: .5rem 0;
-}
+.quotes-home {
+  q {
+    display: block;
+    font-size: 1.19rem;
+    font-weight: 500;
+    margin: .5rem 0;
+  }
+  cite {
+    font-style: italic;
+  }
+} 
 
-.quotes-home-author {
-  display: block;
-  font-weight: 100;
-  margin-top: .5rem;
-}
-
-.quotes-home p {
-  margin: 0;
-}
 
 .introduction-home {
   border-top: 1px solid #ccc;
