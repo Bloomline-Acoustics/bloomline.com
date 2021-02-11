@@ -293,8 +293,9 @@ header {
 
 
 img.header-logo {
-  height: 6rem;
+  height: 4.5rem;
   vertical-align: middle;
+  max-width: 100%;
   width: auto;
 
   &+h2 {
