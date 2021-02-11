@@ -178,7 +178,11 @@ a[href^='tel'] {
   display: none; }
 
 .mainnav .topmenu-home {
-  flex-grow: 2; }
+  flex-grow: 2;
+  z-index: 5; }
+
+.mainnav .mainnav-home-logo {
+  display: block; }
 
 .mainnav a:not(.topmenu-home) {
   margin-left: .75rem; }
@@ -221,8 +225,9 @@ a[href^='tel'] {
     .mainnav .topmenu-switch:checked ~ a:not(.topmenu-home) {
       display: block; }
   .mainnav .hamburger {
-    font-size: 1.33rem;
-    margin-top: -2.5rem;
+    font-size: 1.4rem;
+    margin-top: -2.1rem;
+    padding-bottom: 0;
     text-align: right; } }
 
 /*@media screen and (max-width: 65rem) {
