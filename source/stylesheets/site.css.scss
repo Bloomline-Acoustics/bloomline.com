@@ -400,6 +400,22 @@ p {
 }
 
 
+.centered {
+}
+
+figure {
+  &.centered {
+    display: block;
+    height: auto;
+    margin: 1.5rem auto;
+    max-width: 100%;
+  }
+}
+figcaption {
+  font-style: italic;
+}
+
+
 footer {
   border-top: 1px solid #ddd;
   color: #666;
