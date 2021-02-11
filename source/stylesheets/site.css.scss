@@ -245,6 +245,7 @@ a[href^='tel'] {
   }
   .topmenu-home {
     flex-grow: 2;
+    z-index: 5;
   }
   a:not(.topmenu-home) {
     margin-left: .75rem;
