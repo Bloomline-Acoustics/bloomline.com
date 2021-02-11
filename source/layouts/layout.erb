@@ -22,25 +22,19 @@
 </head>
 <body>
   <nav class="mainnav">
-    <a class="mainnav-left" href="/">
-      <img class="mainnav-left--logo" src="/images/logos/bloomline-logo-black-bg.svg" width="121" height="35">
-    </a>
-    <div class="mainnav-right">
-<!--       <input type="checkbox" id="menu-checkbox">
-      <span id="menu-hamburger">☰</span>
- -->      <div class="menu-items">
-        <a href="/history/">History</a>
-        <a href="/technology/">Technology</a>
-        <a href="/omnidrive-pro/">Omnidrive Pro</a>
-        <a href="/omnidrive-c/">Omnidrive C</a>
-        <a href="/phantom-ii/">Phantom II</a>
-        <a href="/in-the-media/">In the media</a>
-        <a href="/partners/">Partners</a>
-        <a href="/contact/">Contact</a>
-        <a href="https://facebook.com/Bloomline.Acoustics"><img src="/images/icons/facebook.svg" height="48" width="48"></a>
-        <a href="https://nl.linkedin.com/company/bloomline"><img src="/images/icons/linkedin.svg" height="78" width="77"></a>
-      </div>
-    </div>
+    <a class="topmenu topmenu-home" href="/"><img class="mainnav-home-logo" src="/images/logos/bloomline-logo-black-bg.svg" width="121" height="35"></a>
+    <input type="checkbox" class="topmenu topmenu-switch">
+    <span class="hamburger">☰</span>
+    <a href="/history/">History</a>
+    <a href="/technology/">Technology</a>
+    <a href="/omnidrive-pro/">Omnidrive Pro</a>
+    <a href="/omnidrive-c/">Omnidrive C</a>
+    <a href="/phantom-ii/">Phantom II</a>
+    <a href="/in-the-media/">In the media</a>
+    <a href="/partners/">Partners</a>
+    <a href="/contact/">Contact</a>
+    <a class="social-media" href="https://facebook.com/Bloomline.Acoustics"><img src="/images/icons/facebook.svg" height="48" width="48"></a>
+    <a class="social-media" href="https://nl.linkedin.com/company/bloomline"><img src="/images/icons/linkedin.svg" height="78" width="77"></a>
   </nav>
   <article>
     <%= yield %>

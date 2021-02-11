@@ -167,33 +167,105 @@ a[href^='tel'] {
 .mainnav a {
   color: white;
   text-decoration: none; }
+  .mainnav a:hover {
+    text-decoration: underline; }
+  .mainnav a.social-media img {
+    height: 1.4rem;
+    vertical-align: -.3rem;
+    width: auto; }
+
+.mainnav .topmenu-switch, .mainnav .hamburger {
+  display: none; }
+
+.mainnav .topmenu-home {
+  flex-grow: 2; }
+
+.mainnav a:not(.topmenu-home) {
+  margin-left: .75rem; }
 
 .mainnav:before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  /*left: -9999px;*/
   right: 0;
   border-left: 9999px solid black;
   box-shadow: 9999px 0 0 black;
   z-index: -1; }
 
-.mainnav-left--logo {
-  height: 1.5rem;
-  vertical-align: -.3rem; }
+#menu-checkbox {
+  display: none; }
 
-.mainnav-right a {
-  margin-left: .75rem; }
+/* Hamburger menu */
+@media screen and (max-width: 65rem) {
+  .mainnav .topmenu-switch, .mainnav .hamburger {
+    display: block; }
+  .mainnav {
+    flex-wrap: wrap; }
+  .mainnav > * {
+    display: block; }
+  .mainnav > a:not(.topmenu),
+  .mainnav > .hamburger {
+    flex-basis: 100%;
+    padding: .33em 0;
+    text-align: center; }
+  .mainnav .topmenu-switch {
+    cursor: pointer;
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0;
+    z-index: 2; }
+    .mainnav .topmenu-switch ~ a:not(.topmenu-home) {
+      display: none; }
+    .mainnav .topmenu-switch:checked ~ a:not(.topmenu-home) {
+      display: block; }
+  .mainnav .hamburger {
+    font-size: 1.33rem;
+    margin-top: -2.5rem;
+    text-align: right; } }
 
-.mainnav-right a:hover {
-  text-decoration: underline; }
+/*@media screen and (max-width: 65rem) {
+  .mainnav {
+    position: relative;
+    & * {
+      margin: .5rem 0;
+    }
+  }
+  .mainnav-left {
+    z-index: 1;
+  }
+  .mainnav-right {
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  #menu-checkbox {
+    cursor: pointer;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0;
+    z-index: 2;
+    & ~ a {
+      display: none;
+    }
+    &:checked ~ a {
+      display: block;
+    }
+  }
+  #menu-hamburger {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: -3rem;
+    position: relative;
+    top: -3rem;
+    z-index: -1;
+  }
 
-.mainnav-right img {
-  height: 1.4rem;
-  vertical-align: -.3rem;
-  width: auto; }
-
+}*/
 header {
   /*line-height: 1;*/
   margin: 2.5rem 0;
@@ -292,7 +364,7 @@ img.header-logo {
   .videos iframe {
     width: 100%; } }
 
-p {
+p, address {
   margin: .75rem 0; }
 
 figure.centered {
