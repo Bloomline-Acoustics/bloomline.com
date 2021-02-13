@@ -1,14 +1,17 @@
 /* GENERAL STYLES */
 h1,
-h2,
+h2 {
+  margin: 0; }
+
 h3,
 h4,
 h5,
 h6 {
-  margin: 1em 0 .5em 0; }
+  margin-top: 1rem;
+  margin-bottom: .1819em; }
 
 h1 {
-  font-size: 2.82rem;
+  font-size: 2.8284rem;
   font-weight: 500; }
 
 h2 {
@@ -18,15 +21,20 @@ h2 {
 
 h3 {
   font-size: 1.68rem;
-  font-weight: 700; }
+  font-weight: 500; }
 
 h4 {
-  font-size: 1.41rem;
-  font-weight: 700; }
+  font-size: 1.4142rem;
+  font-style: italic;
+  font-weight: 500; }
 
 h5 {
-  font-size: 1.19rem;
-  font-weight: 500; }
+  font-size: 1.189rem;
+  font-weight: 700; }
+
+h6 {
+  font-size: 1rem;
+  font-weight: 700; }
 
 ul {
   padding-left: 1.5rem; }
@@ -77,7 +85,7 @@ html {
 
 body {
   color: #222;
-  line-height: 1.33;
+  line-height: 1.4142;
   font-family: 'AlegreyaSans', sans-serif; }
 
 section {
@@ -230,53 +238,14 @@ a[href^='tel'] {
     padding-bottom: 0;
     text-align: right; } }
 
-/*@media screen and (max-width: 65rem) {
-  .mainnav {
-    position: relative;
-    & * {
-      margin: .5rem 0;
-    }
-  }
-  .mainnav-left {
-    z-index: 1;
-  }
-  .mainnav-right {
-    background-color: black;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
-  #menu-checkbox {
-    cursor: pointer;
-    display: block;
-    height: 2rem;
-    width: 2rem;
-    opacity: 0;
-    z-index: 2;
-    & ~ a {
-      display: none;
-    }
-    &:checked ~ a {
-      display: block;
-    }
-  }
-  #menu-hamburger {
-    display: block;
-    font-size: 2rem;
-    margin-bottom: -3rem;
-    position: relative;
-    top: -3rem;
-    z-index: -1;
-  }
-
-}*/
 header {
-  /*line-height: 1;*/
   margin: 2rem 0;
-  text-align: center; }
-  header > * {
-    margin: 0; }
+  text-align: center;
+  /*
+  &>* {
+    margin: 0;
+  }
+*/ }
 
 .header-home {
   color: #888;
