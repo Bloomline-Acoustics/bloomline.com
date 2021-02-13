@@ -2,11 +2,12 @@
 <html lang="<%= current_page.data.lang || 'en' %>">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="robots" content="index, follow">
+  <!-- Crawlers -->
   <link rel="canonical" href="https://bloomline.com<%= current_page.url %>">
+  <meta name="robots" content="index, follow">
 
-  <!-- Title, description, keywords -->
+  <!-- Metadata -->
+  <meta charset="utf-8">
   <title><%= current_page.data.title || "Bloomline Acoustics BV" %></title>
   <meta name="description" content="<%= current_page.data.description %>">
   <meta name="keywords" content="<%= current_page.data.keywords %>">
@@ -25,6 +26,7 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/site.css">
 </head>
+
 <body>
   <nav class="mainnav">
     <a class="topmenu topmenu-home" href="/"><img class="mainnav-home-logo" src="/images/logos/bloomline-logo-black-bg.svg" width="121" height="35"></a>
