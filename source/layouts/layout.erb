@@ -10,6 +10,10 @@
   <title><%= current_page.data.title || "Bloomline Acoustics BV" %></title>
   <meta name="description" content="<%= current_page.data.description %>">
   <meta name="keywords" content="<%= current_page.data.keywords %>">
+  <meta name="copyright" content="Bloomline Acoustics BV">
+  <meta name="author=<%= current_page.data.author || 'Bloomline Acoustics BV' %>">
+  <meta name="designer" content="Jorn Mineur">
+  <meta name="web_author" content="Jorn Mineur">
 
   <!-- Icons -->
   <link rel="icon" type="image/svg+xml" href="/images/icons/bloomline.svg">
@@ -17,16 +21,9 @@
 
   <!-- Styles and viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <%= stylesheet_link_tag 'fonts', 'normalize', 'site' %>
-
-  <!-- Preload fonts -->
-  <link rel="preload" href="/fonts/AlegreyaSans/AlegreyaSans-Thin.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/AlegreyaSans/AlegreyaSans-Light.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/AlegreyaSans/AlegreyaSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/AlegreyaSans/AlegreyaSans-Italic.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/AlegreyaSans/AlegreyaSans-Medium.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/AlegreyaSans/AlegreyaSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/site.css">
 </head>
 <body>
   <nav class="mainnav">

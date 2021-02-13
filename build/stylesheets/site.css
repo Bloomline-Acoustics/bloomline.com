@@ -273,7 +273,7 @@ a[href^='tel'] {
 }*/
 header {
   /*line-height: 1;*/
-  margin: 2.5rem 0;
+  margin: 2rem 0;
   text-align: center; }
   header > * {
     margin: 0; }
