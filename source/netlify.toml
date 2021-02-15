@@ -2,5 +2,3 @@
   for = "/*"
   [headers.values]
 	cache-control = "max-age=600"
-[build.processing]
-	skip_processing = true
