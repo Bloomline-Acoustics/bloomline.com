@@ -1,6 +1,12 @@
 [[headers]]
+  for = "/fonts/*/*.ttf"
+  [headers.values]
+    cache-control = "max-age=31556952"
+
+[[headers]]
   for = "/*"
   [headers.values]
-    cache-control = "max-age=3600"
+    cache-control = "max-age=86400"
+
 [build.processing]
     skip_processing = true
