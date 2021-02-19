@@ -1,5 +1,5 @@
 [[headers]]
-  for = "/fonts/*/*.ttf"
+  for = "/fonts/*"
   [headers.values]
     cache-control = "max-age=31556952"
 
