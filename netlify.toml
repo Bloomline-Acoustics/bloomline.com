@@ -1,0 +1,19 @@
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    cache-control = "max-age=31556952"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = "max-age=86400"
+
+[build]
+  publish = "build"
+  command = "rm -rf build && bundle exec middleman build"
+
+[build.environment]
+  RUBY_VERSION = "3.2.3"
+
+[build.processing]
+  skip_processing = true
