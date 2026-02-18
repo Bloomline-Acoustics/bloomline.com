@@ -8,5 +8,12 @@
   [headers.values]
     cache-control = "max-age=86400"
 
+[build]
+  publish = "build"
+  command = "bundle exec middleman build"
+
+[build.environment]
+  RUBY_VERSION = "3.2.3"
+
 [build.processing]
-    skip_processing = true
+  skip_processing = true
